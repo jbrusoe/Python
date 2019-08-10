@@ -1,10 +1,6 @@
-#Slope of a line - Version 1
+#Slope of a line - Version 2
 
-#This version doesn't have the following which will be added in subsequent versions:
-#   1. Exception handling (such as verifying input points are numbers, avoiding division by zero, etc.)
-#   2. Output formatting
-#   3. Array demo to show a better way to handle multiple points
-#   4. Function to validate user input
+#Version 2 adds code to prevent division by zero errors
 
 #Written by: Jeff Brusoe
 #Last Updated: August 10, 2019
@@ -17,6 +13,11 @@ y1 = float(input("Enter the first y coordinate: "))
 x2 = float(input("Enter the second x coordinate: "))
 y2 = float(input("Enter the second y coordinate: "))
 
-slope = (y2-y1)/(x2-x1)
-
-print("The slope of the line is " + str(slope) + ".")
+try:
+    slope = (y2-y1)/(x2-x1)
+except ZeroDivisionError:
+    print("The x values are equal. The slope is undefined.")
+except:
+    print("An error occurred.")
+else:
+    print("The slope of the line is " + str(slope) + ".")

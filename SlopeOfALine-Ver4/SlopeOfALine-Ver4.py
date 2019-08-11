@@ -7,7 +7,7 @@
 #Last Updated: August 10, 2019
 
 def get_valid_input(InputString):
-#InputSring is the message displayed by the input statement.
+    #InputSring is the message displayed by the input statement.
     while True:
         
         try:

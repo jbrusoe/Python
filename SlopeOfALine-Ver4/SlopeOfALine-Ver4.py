@@ -6,51 +6,25 @@
 #Written by: Jeff Brusoe
 #Last Updated: August 10, 2019
 
-def isValidInput(UserInput):
-
-    try:
-        float(UserInput)
-    except:
-        print("Please enter a number.")
-        return False
-    else:
-        return True
+def get_valid_input(InputString):
+#InputSring is the message displayed by the input statement.
+    while True:
+        
+        try:
+            UserInput = float(input(InputString))
+        except:
+            print("Please enter a number.")
+        else:
+            return UserInput
 
 #First Point
-
-UserInput = ""
-while not isValidInput(UserInput):
-        UserInput = input("Enter the first x coordinate: ")
-
-x1 = float(UserInput)
-UserInput = ""
-
-while True:
-    try:
-        y1 = float(input("Enter the first y coordinate: "))
-    except:
-        print("Plesae enter a valid number for the first point")
-    else:
-        break
+x1 = get_valid_input("Enter the first x coordinate: ")
+y1 = get_valid_input("Enter the first y coordinate: ")
 
 
 #Second Point
-while True:
-    try:
-        x2 = float(input("Enter the second x coordinate: "))
-    except:
-        print("Plesae enter a valid number for the first point")
-    else:
-        break
-
-while True:
-    try:
-        y2 = float(input("Enter the second y coordinate: "))
-    except:
-        print("Plesae enter a valid number for the first point")
-    else:
-        break
-
+x2 = get_valid_input("Enter the second x coordinate: ")
+y2 = get_valid_input("Enter the second y coordinate: ")                              
 
 try:
     slope = (y2-y1)/(x2-x1)

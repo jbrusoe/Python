@@ -33,4 +33,4 @@ except ZeroDivisionError:
 except:
     print("An error occurred.")
 else:
-    print("The slope of the line is " + str(slope) + ".")
+    print("The slope of the line is %5.3f." % slope)

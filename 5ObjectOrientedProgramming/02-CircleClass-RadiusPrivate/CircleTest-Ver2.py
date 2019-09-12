@@ -14,4 +14,8 @@ print("Circle New Radius: " + str(Circle1.getRadius()))
 print("Circle Circumference: " + str(Circle1.getCircumference()))
 
 print("Circle 1 Radius - Access via non-hidden variable")
-print("Circle1 Radius: " + str(Circle1.radius))
+try:
+    print("Circle1 Radius: " + str(Circle1.__radius))
+except:
+    print("Unable to directly access radius variable.")
+    print("Using getRadius: " + str(Circle1.getRadius()))

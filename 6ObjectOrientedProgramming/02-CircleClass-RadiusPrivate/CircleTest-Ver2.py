@@ -1,4 +1,4 @@
-#This filet tests out the constuctor and methods of the circle class.
+#This file tests out the constuctor and methods of the circle class.
 
 import Circle
 

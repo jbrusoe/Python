@@ -22,9 +22,12 @@ else:
     if discriminant == 0:
         Solution = (-b/(2*a))
         print ("x = " + str(Solution))
-    else
+    else:
         Solution1 = (-b + math.sqrt(discriminant))/(2*a)
         Solution2 = (-b - math.sqrt(discriminant))/(2*a)
+
+        print("Solution 1: " + str(Solution1))
+        print("Solution 2: " + str(Solution2))
 
     
 

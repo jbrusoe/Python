@@ -14,9 +14,9 @@ discriminant = b**2 - 4*a*c
 print("Discriminant: " + str(discriminant))
 
 if discriminant < 0:
-    print("The discriminant is less than 0. The answers will involve complex numbers")
+    print("\nThe discriminant is less than 0. The answers will involve complex numbers")
 else:
-    print("The discriminant is greather than or equal to zero.")
+    print("\hThe discriminant is greater than or equal to zero.")
     print("Therefore, real number solutions exist.")
 
     if discriminant == 0:

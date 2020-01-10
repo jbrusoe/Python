@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PygameTest", "PygameTest.pyproj", "{DBB7CE3B-2929-45F5-B7E2-585A077BDF66}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Pygame-DisplayEvents", "Pygame-DisplayEvents.pyproj", "{13FD6235-EC82-4AB8-872E-094C0FC84C59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DBB7CE3B-2929-45F5-B7E2-585A077BDF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBB7CE3B-2929-45F5-B7E2-585A077BDF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13FD6235-EC82-4AB8-872E-094C0FC84C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13FD6235-EC82-4AB8-872E-094C0FC84C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {75F0DDDB-4B27-4F2B-B187-05524DE5201C}
+		SolutionGuid = {EFF37C79-05E6-413A-BFFD-8CD018AFD030}
 	EndGlobalSection
 EndGlobal

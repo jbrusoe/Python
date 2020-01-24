@@ -10,13 +10,20 @@ def collatz(number):
         print(3*number+1)
         return 3*number+1
 
+#Main program
 while True:
     try:
+        #int() converts string input to a number. An error will be raised
+        #if the input is not a number as well as not an integer.
         CurrentNumber = int(input("Enter a positive integer: "))
-        print("Beginning Number: " + str(CurrentNumber))
-        break
+
+        if CurrentNumber < 1:
+            print("Please enter an integer which is greater than 0")
+        else:
+            print("Beginning Number: " + str(CurrentNumber))
+            break
     except:
-        print("Invalid input")
+        print("Please enter an integer which is greater than 0.")
 
 
 while CurrentNumber != 1:

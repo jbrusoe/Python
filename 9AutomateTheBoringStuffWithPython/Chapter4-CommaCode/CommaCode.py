@@ -7,10 +7,18 @@
 #           "Automate the Boring Stuff with Python".
 
 def ListToString(InputList):
-    print(InputList)
-    OutputString = None
+    print("Input List: ", InputList)
+
+    OutputString = ""
+    
+    for i in range(len(InputList)):
+
+        if i == (len(InputList) - 1):
+            OutputString = OutputString + "and " + InputList[i]
+        else:
+            OutputString = OutputString + InputList[i] + ", "
 
     return OutputString
 
-ListToString(['apples', 'bananas', 'tofu', 'cats'])
+print(ListToString(['apples', 'bananas', 'tofu', 'cats']))
     

@@ -9,11 +9,16 @@ def displayInventory(SummaryTitle,inventory):
     print("Total number of items: " + str(item_total))
 
 def addToInventory(Inventory, AddedItems):
-    print("\nItems to add to inventory")
-    
+    print("\nItems to add to inventory:")
     for i in range(len(AddedItems)):
         print(AddedItems[i])
-              
+
+    print("\n")
+    
+    #Now add items to inventory
+    for i in range(len(AddedItems)):
+        print("Additen item: " + AddedItems[i])
+        
     return Inventory
 
 

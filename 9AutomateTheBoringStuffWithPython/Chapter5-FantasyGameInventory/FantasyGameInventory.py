@@ -6,18 +6,18 @@ def displayInventory(SummaryTitle,inventory):
     for k, v in inventory.items():
         print(str(v) + ' ' + k)
         item_total += v
-    print("Total number of items: " + str(item_total))
+
+    print("Total number of items: " + str(item_total) + "\n")
 
 def addToInventory(Inventory, AddedItems):
-    print("\nItems to add to inventory:")
-    for i in range(len(AddedItems)):
-        print(AddedItems[i])
-
-    print("\n")
     
-    #Now add items to inventory
     for i in range(len(AddedItems)):
-        print("Additen item: " + AddedItems[i])
+        print("Added Item: " + AddedItems[i])
+
+        ItemTotal = stuff.get(AddedItems[i],0)
+        print("Count: " + str(ItemTotal))
+
+        
         
     return Inventory
 

@@ -1,6 +1,13 @@
+#Fantasy Game Inventory
+#Written by: Jeff Brusoe
+#Last Updated: January 27, 2020
+#
+#Based on end of chapter 5 exercises from Automate the Boring Stuff with Python
+#https://automatetheboringstuff.com/
+
 CurrentStuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 
-def displayInventory(SummaryTitle,inventory):
+def DisplayInventory(SummaryTitle,inventory):
     print(SummaryTitle + ":")
     item_total = 0
     for k, v in inventory.items():
@@ -9,7 +16,7 @@ def displayInventory(SummaryTitle,inventory):
 
     print("Total number of items: " + str(item_total) + "\n")
 
-def addToInventory(Inventory, AddedItems):
+def AddToInventory(Inventory, AddedItems):
     
     for i in range(len(AddedItems)):
         print("Adding Item: " + AddedItems[i])
@@ -21,9 +28,9 @@ def addToInventory(Inventory, AddedItems):
     return Inventory
 
 
-displayInventory("Initial Inventory",CurrentStuff)
+DisplayInventory("Initial Inventory",CurrentStuff)
 
 DragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
-CurrentStuff = addToInventory(CurrentStuff, DragonLoot)
+CurrentStuff = AddToInventory(CurrentStuff, DragonLoot)
 
-displayInventory("\nFinal Inventory", CurrentStuff)
+DisplayInventory("\nFinal Inventory", CurrentStuff)

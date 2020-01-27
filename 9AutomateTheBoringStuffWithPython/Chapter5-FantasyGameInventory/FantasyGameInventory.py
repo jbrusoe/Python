@@ -1,4 +1,4 @@
-stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+CurrentStuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 
 def displayInventory(SummaryTitle,inventory):
     print(SummaryTitle + ":")
@@ -12,19 +12,18 @@ def displayInventory(SummaryTitle,inventory):
 def addToInventory(Inventory, AddedItems):
     
     for i in range(len(AddedItems)):
-        print("Added Item: " + AddedItems[i])
+        print("Adding Item: " + AddedItems[i])
 
-        ItemTotal = stuff.get(AddedItems[i],0)
-        print("Count: " + str(ItemTotal))
+        ItemTotal = Inventory.get(AddedItems[i],0)
 
-        
+        Inventory[AddedItems[i]] = ItemTotal + 1
         
     return Inventory
 
 
-displayInventory("Initial Inventory",stuff)
+displayInventory("Initial Inventory",CurrentStuff)
 
 DragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
-stuff = addToInventory(stuff, DragonLoot)
+CurrentStuff = addToInventory(CurrentStuff, DragonLoot)
 
-displayInventory("\nFinal Inventory", stuff)
+displayInventory("\nFinal Inventory", CurrentStuff)

@@ -18,7 +18,7 @@ clock = pygame.time.Clock()
 Circlex = 100
 Deltax = 5
 Circley = 300
-Deltay = 1
+Deltay = 5
 Radius = 50
 
 CanContinue = True
@@ -35,17 +35,14 @@ while CanContinue:
     if keys[pygame.K_LEFT]:
         Circlex -= Deltax
 
+    if keys[pygame.K_DOWN]:
+        Circley += Deltay
+
+    if keys[pygame.K_UP]:
+        Circley -= Deltay
+
     win.fill((0,0,0))
     pygame.draw.circle(win,(0,255,0),(Circlex,Circley),Radius)
-
-    
-    Circley += Deltay
-
-    if (Circlex + Radius) > 600 or (Circlex -Radius) < 0:
-        Deltax = Deltax * (-1)
-
-    if (Circley + Radius) > 600 or (Circley -Radius) < 0:
-        Deltay = Deltay * (-1)
 
     pygame.display.update()
     clock.tick(60)

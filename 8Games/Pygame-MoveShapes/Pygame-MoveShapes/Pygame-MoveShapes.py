@@ -11,7 +11,7 @@ import math
 pygame.init()
 
 win = pygame.display.set_mode((600, 600))
-pygame.display.set_caption("Draw Shapes")
+pygame.display.set_caption("Bouncing Circle")
 clock = pygame.time.Clock()
 
 #Circle Paramters

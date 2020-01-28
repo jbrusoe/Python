@@ -1,3 +1,9 @@
+#Pygame demo to draw shapes (rectangle, circle, and ellipse)
+#Written by: Jeff Brusoe
+#Last Updated: January 27, 2020
+#
+#https://www.pygame.org/docs/ref/draw.html#pygame.draw.polygon
+
 import pygame
 
 #Program initialization

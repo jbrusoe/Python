@@ -7,13 +7,14 @@ turtle.showturtle()
 turtle.up()
 turtle.goto(-SideLength/2,-SideLength/2)
 turtle.down()
+turtle.width(5)
 
 Count = 1
 
 while Count < 5:
     print(Count)
 
-    if Count == 1:
+    if Count%2 == 1:
         turtle.color("green")
     else:
         turtle.color("red")

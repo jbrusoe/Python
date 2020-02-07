@@ -2,6 +2,7 @@
 #Demo for Programming Merit Badge class
 #
 ##Liang Textbook - Chapter 2, Problem 6
+#https://www.amazon.com/Introduction-Programming-Using-Python-Daniel/dp/0132747189/ref=sr_1_1?crid=2H6JTNNOMYZEY&keywords=introduction+to+programming+using+python&qid=1581086949&sprefix=introduction+to+program%2Caps%2C143&sr=8-1
 #Sum the digits of a number
 #
 #Version 3 - Using for loop & with exception handling

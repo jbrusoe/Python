@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CO2GraphingDemo", "CO2GraphingDemo.pyproj", "{02A6275E-A715-434E-8264-BE1DCE0E05F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02A6275E-A715-434E-8264-BE1DCE0E05F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A6275E-A715-434E-8264-BE1DCE0E05F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09A85148-15C5-45D0-952E-7DDD6A7631CC}
+	EndGlobalSection
+EndGlobal

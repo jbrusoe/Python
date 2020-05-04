@@ -1,3 +1,7 @@
+#Multiple Square Shapes
+#Written by: Jeff Brusoe
+#Last Updated: May 3, 2020
+
 import turtle
 
 turtle.showturtle()

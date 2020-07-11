@@ -19,7 +19,7 @@
 #1.  Calculate the circle's diameter and display it.
 #
 #2.  Prevent certain numbers from being entered as a radius.  
-#For example, don't allow the radius to be above 30 cm.
+#    For example, don't allow the radius to be above 30 cm.
 #
 #3.  Ensure a standardized format for number output.
 
@@ -27,7 +27,7 @@
 Radius = 0.0
 Circumference = 0.0
 Area = 0.0
-Pi = 3.14
+PI = 3.14
 
 print ("This program calculates the circumference and area of a circle.\n")
 
@@ -41,16 +41,16 @@ while True:
         else:
             print ("The radius must be greater than zero.")
     except:
-        #This gets executed if letters are entered for the radius.
+        #This gets executed if letters or other non-numeric characters are entered for the radius.
         print ("The radius can't have letters in it.")
 
 #Calculations and Output
 print ("Radius(cm): " +  str(Radius))
 
-Circumference = 2*Pi*Radius
+Circumference = 2*PI*Radius
 print ("Circumference(cm): " + str(Circumference))
 
-Area = Pi*Radius*Radius
+Area = PI*Radius*Radius
 print ("Area(sq cm): " + str(Area))
 
 input ("\nPress the enter key to close window.")
